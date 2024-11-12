@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block title %}Météo{% endblock %}
+
+{% block content %}
+<div class="row mt-5">
+    <div class="col-md-6 offset-md-3">
+        <h1 class="text-center mb-4">Météo</h1>
+
+        <form method="POST" class="mb-4">
+            <div class="input-group">
+                <input type="text" name="city" class="form-control" placeholder="Entrez une ville..." required>
+                <button type="submit" class="btn btn-primary">Rechercher</button>
+            </div>
+        </form>
+
+        {% if weather %}
+        <div class="card">
+            <div class="card-body">
+                <h2 class="card-title">{{ weather.city }}, {{ weather.country }}</h2>
+                <div class="text-center">
+                    <img src="http://openweathermap.org/img/w/{{ weather.icon }}.png" alt="{{ weather.description }}">
+                </div>
+                <p class="card-text">Température: {{ "%.1f"|format(weather.temperature) }}°C</p>
+                <p class="card-text">Humidité: {{ weather.humidity }}%</p>
+                <p class="card-text">Description: {{ weather.description }}</p>
+                <p class="card-text"><small class="text-muted">Dernière mise à jour: {{ weather.timestamp.strftime('%H:%M:%S') }}</small></p>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}
