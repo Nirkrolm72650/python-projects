@@ -2,21 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce07f277-e410-4792-b57d-5b42ce022ce9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/WeatherApp/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WeatherApp/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WeatherApp/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WeatherApp/run.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/python-projects.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/python-projects.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WeatherApp/app/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/WeatherApp/app/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WeatherApp/app/models/weather.py" beforeDir="false" afterPath="$PROJECT_DIR$/WeatherApp/app/models/weather.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WeatherApp/app/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/WeatherApp/app/routes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WeatherApp/app/services/weather_services.py" beforeDir="false" afterPath="$PROJECT_DIR$/WeatherApp/app/services/weather_services.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WeatherApp/app/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/WeatherApp/app/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WeatherApp/app/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/WeatherApp/app/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WeatherApp/config/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/WeatherApp/config/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WeatherApp/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
