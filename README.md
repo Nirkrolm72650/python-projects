@@ -19,11 +19,12 @@ Bienvenue dans **Student Management System** ! 🧑‍🎓 Ce projet est un outi
 - 📥 Importer et exporter des données en JSON/CSV
 - 🎨 Interface utilisateur en ligne de commande stylisée avec [Rich](https://rich.readthedocs.io/)
 
+![image](https://github.com/user-attachments/assets/6e1a0996-e910-4764-a066-da9e53526ace)
+
+
 ---
 
 # 2 - WeatherApp ☀️
-
-![img.png](img.png)
 
 [![Python](https://img.shields.io/badge/Python-3.9-blue.svg)](https://www.python.org/)
 [![Flask](https://img.shields.io/badge/Flask-2.0.1-green.svg)](https://flask.palletsprojects.com/)
@@ -38,3 +39,8 @@ WeatherApp est une application web développée avec le framework Python Flask. 
 - **Flask** 🌎 : Framework web Python utilisé pour construire l'application.
 - **Requests** 🌐 : Bibliothèque Python pour effectuer des requêtes HTTP.
 - **Python-Dotenv** 🔑 : Bibliothèque pour charger les variables d'environnement depuis un fichier `.env`.
+
+![img.png](img.png)
+
+---
+  
