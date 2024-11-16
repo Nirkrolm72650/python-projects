@@ -1,7 +1,7 @@
 # Projets en python
 Plusieurs petits projets permettant l'apprentissage du langage python ainsi que ses frameworks
 
-# 1 - Student Management System
+# 1 - Student Management System 🧑‍🎓
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue?logo=python&logoColor=white)
 ![JSON](https://img.shields.io/badge/Data-JSON-lightgrey?logo=json&logoColor=white)
@@ -21,7 +21,7 @@ Bienvenue dans **Student Management System** ! 🧑‍🎓 Ce projet est un outi
 
 ---
 
-# 2 - WeatherApp
+# 2 - WeatherApp ☀️
 
 ![img.png](img.png)
 
