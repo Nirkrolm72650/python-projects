@@ -1,7 +1,27 @@
 # Projets en python
-Plusieurs petits projets permettant l'apprentissage du langage python ainsi que ces frameworks
+Plusieurs petits projets permettant l'apprentissage du langage python ainsi que ses frameworks
 
-## 1 - WeatherApp
+# 1 - Student Management System
+
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue?logo=python&logoColor=white)
+![JSON](https://img.shields.io/badge/Data-JSON-lightgrey?logo=json&logoColor=white)
+![Rich](https://img.shields.io/badge/Styling-Rich-blueviolet?logo=python)
+
+Bienvenue dans **Student Management System** ! 🧑‍🎓 Ce projet est un outil simple en ligne de commande pour gérer une liste d'étudiants. Ce projet a été réaliser dans le but d'apprendre les concepts fondamentaux de la POO ainsi que la gestion de fichier notamment JSON. Ce projet aura potentiellement des fonctionnalités plus avancées 🚀. Ce projet a également pour but de mettre en oeuvre les bonnes pratiques en programmation python comme le clean code, l'archetecture ainsi que de savoir documenter et tester le code.
+
+---
+
+## 🛠️ Fonctionnalités
+
+- ✏️ Ajouter un étudiant
+- 🔍 Rechercher un étudiant par nom
+- 🗑️ Supprimer un étudiant
+- 📥 Importer et exporter des données en JSON/CSV
+- 🎨 Interface utilisateur en ligne de commande stylisée avec [Rich](https://rich.readthedocs.io/)
+
+---
+
+# 2 - WeatherApp
 
 ![img.png](img.png)
 
