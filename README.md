@@ -19,7 +19,8 @@ Bienvenue dans **Student Management System** ! 🧑‍🎓 Ce projet est un outi
 - 📥 Importer et exporter des données en JSON/CSV
 - 🎨 Interface utilisateur en ligne de commande stylisée avec [Rich](https://rich.readthedocs.io/)
 
-![image](https://github.com/user-attachments/assets/6e1a0996-e910-4764-a066-da9e53526ace)
+![image](https://github.com/user-attachments/assets/697f62c3-2bc1-46df-886d-c3d1b13996b9)
+
 
 
 ---
