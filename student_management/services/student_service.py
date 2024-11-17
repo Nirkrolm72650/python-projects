@@ -100,13 +100,14 @@ def search_student(file_path, name_student):
     # Liste permettant de stocker les résultats de la recherche
     result_data = []
     
-    for student_name in data:
-        if name_student.lower() in student_name.get("lastname", "").lower():
-            result_data.append(student_name)
+    for student_obj in data:
+        for student_id, student_info in student_obj.items():
+            if name_student.lower() in student_info["lastname"].lower():
+                result_data.append(student_info)
             
     # Affiche les résultats après la vérification
     if result_data:
-        pprint.pprint(f"Étudiants trouvées avec le nom '{name_student}':", result_data)
+        print(f"Étudiants trouvées avec le nom '{name_student}':", result_data)
     else:
         print(f"Aucun étudiant trouvé avec le nom '{name_student}'")
         
@@ -116,7 +117,7 @@ def search_student(file_path, name_student):
 def print_list_student(filePath):
 
     with open(filePath, "r") as file:
-
+        # on charge le fichier json
         data = json.load(file)
 
     print("\n=== Liste des étudiants ===")
