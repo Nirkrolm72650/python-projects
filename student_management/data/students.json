@@ -1,17 +1,5 @@
 [
     {
-        "id": 339554264613526023923708479097139808833,
-        "lastname": "Guyon",
-        "firstname": "Brandon",
-        "email": "guyonbrandon@outlook.fr"
-    },
-    {
-        "id": 329773863826026466350980726422344446840,
-        "lastname": "Doe",
-        "firstname": "John\u00f9",
-        "email": "johndoe@gmail.com"
-    },
-    {
         "1": {
             "id": "1",
             "firstname": "Lewiss",

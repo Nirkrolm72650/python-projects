@@ -1,11 +1,10 @@
 from console.menu import display_menu  
-from services.student_service import add_student, delete_student, search_student
+from services.student_service import *
 from services.utils import convert_csv_to_json
 import uuid
 import pprint
 
 def main():
-    
     
     while True:
         # Afficher le menu et récupérer le choix de l'utilisateur
@@ -29,7 +28,7 @@ def main():
             type(valeur)
             input()
         elif choice == "4":
-            pass  # Appel de la fonction pour afficher tous les étudiants
+            print_list_student("data/students.json")  # Appel de la fonction pour afficher tous les étudiants
         elif choice == "5":
             file = input("Entrez le nom du fichier CSV : ")
             convert_csv_to_json("data/"+file, "data/students.json")

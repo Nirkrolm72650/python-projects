@@ -113,5 +113,20 @@ def search_student(file_path, name_student):
     return result_data
         
     
-    
-    
+def print_list_student(filePath):
+
+    with open(filePath, "r") as file:
+
+        data = json.load(file)
+
+    print("\n=== Liste des étudiants ===")
+    for student_obj in data:
+        # Pour chaque objet dans la liste, nous prenons le premier (et unique) élément
+        for key, student in student_obj.items():
+            print(f"ID: {student['id']}")
+            print(f"Prénom: {student['firstname']}")
+            print(f"Nom: {student['lastname']}")
+            print(f"Email: {student['email']}")
+            print("-" * 30)
+
+    return data
