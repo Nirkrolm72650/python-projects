@@ -1,4 +1,5 @@
 import json
+import csv
 from models.student import Student
 
 
@@ -36,5 +37,19 @@ def add_new_line(file_path, new_data):
     
     # Retourner les données mises à jour
     return data
+
+def convert_csv_to_json(csvFilePath, jsonFilePath):
+    data = {}
+
+    with open(csvFilePath, encoding='utf-8') as csvf:
+        csvReader = csv.DictReader(csvf)
+
+        for row in csvReader:
+            key = row['id']
+            data[key] = row
+
+        add_new_line(jsonFilePath, data)
+
+        return data
 
 

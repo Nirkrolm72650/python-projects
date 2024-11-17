@@ -22,7 +22,8 @@ def display_menu():
     table.add_row("2", "Rechercher un étudiant")
     table.add_row("3", "Supprimer un étudiant")
     table.add_row("4", "Afficher la liste des étudiants")
-    table.add_row("5", "Quitter")
+    table.add_row("5", "Importer un CSV")
+    table.add_row("6", "Quitter")
 
     try:
         # Affichage du tableau
@@ -30,7 +31,7 @@ def display_menu():
         
         # Demande du choix à l'utilisateur
         choice = Prompt.ask("\n[bold cyan]Choisissez une option[/bold cyan]", 
-                          choices=["1", "2", "3", "4", "5"])
+                          choices=["1", "2", "3", "4", "5", "6"])
         return choice
         
     except KeyboardInterrupt:
