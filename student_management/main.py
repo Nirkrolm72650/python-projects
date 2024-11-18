@@ -20,7 +20,7 @@ def main():
             input
         elif choice == "2":
             name_search = input("Entrez un nom pour rechercher : ")
-            results = search_student("data/students.json",name_search) # Appel de la fonction pour rechercher un étudiant
+            search_student("data/students.json",name_search) # Appel de la fonction pour rechercher un étudiant
             input()
         elif choice == "3":
             delete_by_id = int(input("Entrez l'id de l'étudiant : "))

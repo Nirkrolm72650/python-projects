@@ -1,5 +1,7 @@
 import json
 import csv
+import time
+from rich.progress import Progress
 from models.student import Student
 
 
@@ -41,12 +43,21 @@ def add_new_line(file_path, new_data):
 def convert_csv_to_json(csvFilePath, jsonFilePath):
     data = {}
 
+    # Calcul du nombre de ligne pour la barre de progression
+    with open(csvFilePath, encoding="utf-8") as csvf:
+        total_lines = sum(1 for _ in csvf) - 1 # -1 permet d'exclure l'en-tête
+
     with open(csvFilePath, encoding='utf-8') as csvf:
         csvReader = csv.DictReader(csvf)
 
-        for row in csvReader:
-            key = row['id']
-            data[key] = row
+        with Progress() as progress:
+            task = progress.add_task("[cyan]Conversion en JSON...", total=total_lines)
+
+            for row in csvReader:
+                key = row['id']
+                data[key] = row
+                progress.advance(task)
+                time.sleep(0.1)
 
         add_new_line(jsonFilePath, data)
 

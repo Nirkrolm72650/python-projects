@@ -1,10 +1,9 @@
 from models.student import Student
 from services.utils import add_new_line, read_file
 
-import uuid
 import json
-import pprint
-
+import time
+from rich.progress import Progress
 
 def add_student(id, firstname, lastname, email):
     
@@ -89,7 +88,8 @@ def search_student(file_path, name_student):
     dict : dictionnaire contenant les informations de l'étudiant recherchée
     """
     try:
-         data = read_file("data/students.json")
+        with open("data/students.json", "r") as file:
+            data = json.load(file)
     except FileNotFoundError:
         print(f"Le fichier {file_path} n'existe pas")
         return []
@@ -99,15 +99,30 @@ def search_student(file_path, name_student):
     
     # Liste permettant de stocker les résultats de la recherche
     result_data = []
-    
-    for student_obj in data:
-        for student_id, student_info in student_obj.items():
-            if name_student.lower() in student_info["lastname"].lower():
-                result_data.append(student_info)
+
+    with Progress() as progress:
+        task = progress.add_task("[cyan]Recherche en cours...", total=len(data) * 3)
+        for student_obj in data:
+            time.sleep(0.05)
+            progress.advance(task)
+
+            for student_id, student_info in student_obj.items():
+                if name_student.lower() in student_info["lastname"].lower():
+                    result_data.append(student_info)
+                    break
+                time.sleep(0.05)
+                progress.advance(task)
             
     # Affiche les résultats après la vérification
     if result_data:
-        print(f"Étudiants trouvées avec le nom '{name_student}':", result_data)
+        print(f"Étudiants trouvés avec le nom '{name_student}'")
+        for student in result_data:
+            print("-" * 50)
+            print(f"ID: {student['id']}")
+            print(f"Prénom: {student['firstname']}")
+            print(f"Nom: {student['lastname']}")
+            print(f"Email: {student['email']}")
+            print("-" * 50)
     else:
         print(f"Aucun étudiant trouvé avec le nom '{name_student}'")
         
